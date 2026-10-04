@@ -5,45 +5,244 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>L & L Family Farm | Wingate, NC</title>
 <meta name="description" content="L & L Family Farm in Wingate, North Carolina. Family-raised commercial Angus and South Poll cattle, raised with care and rooted in family.">
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap');
+
 :root{--cream:#f7f4ed;--green:#1f352b;--tan:#d9c8a6;--white:#fff;--ink:#202a25}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.7}
-h1,h2,h3{font-family:"Libre Baskerville",Georgia,serif;color:var(--green);line-height:1.2}h1{font-size:clamp(2.7rem,6vw,5.5rem);margin:.2em 0}h2{font-size:clamp(2rem,4vw,3.5rem);margin:0 0 1rem}h3{font-size:clamp(1.7rem,3vw,2.7rem);margin:.2rem 0 1rem}
-p{font-size:1.06rem;margin:.7rem 0}.wrap{width:min(1180px,90%);margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:600}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.7}
+
+h1,h2,h3{font-family:"Libre Baskerville",Georgia,serif;color:var(--green);line-height:1.2}
+h1{font-size:clamp(2.7rem,6vw,5.5rem);margin:.2em 0}
+h2{font-size:clamp(2rem,4vw,3.5rem);margin:0 0 1rem}
+h3{font-size:clamp(1.7rem,3vw,2.7rem);margin:.2rem 0 1rem}
+p{font-size:1.06rem;margin:.7rem 0}
+
+.wrap{width:min(1180px,90%);margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:600}
+
 header{position:sticky;top:0;z-index:10;background:rgba(247,244,237,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(31,53,43,.12)}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Libre Baskerville",Georgia,serif;font-size:1.25rem;color:var(--green);text-decoration:none}.navlinks{display:flex;gap:1.5rem}.navlinks a{color:var(--green);text-decoration:none;font-size:.92rem}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;background:linear-gradient(rgba(20,30,25,.25),rgba(20,30,25,.35)),url("https://static.wixstatic.com/media/866d77_2bbac3f9366b481db12e6243ce283943~mv2.webp/v1/fill/w_1800,h_1200,al_c,q_90/farm-photo.webp") center/cover no-repeat;color:white}
-.hero h1,.hero p{color:white;text-shadow:0 2px 18px rgba(0,0,0,.35)}.hero p{font-size:clamp(1.2rem,2.2vw,1.7rem)}
-section{padding:100px 0}.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.photo{width:100%;height:560px;object-fit:cover;display:block}.photo.wide{height:430px}
-.raise{background:#ece7dc}.care{padding:0}.care .text{padding:65px}.quote{font-family:"Libre Baskerville",Georgia,serif;font-style:italic;color:var(--green);margin-top:1.6rem}
-.why{min-height:600px;display:grid;align-items:center;background:linear-gradient(90deg,rgba(18,30,24,.68),rgba(18,30,24,.25)),url("https://static.wixstatic.com/media/866d77_1a269448054d4e84876dbb6f29aa3c78~mv2.jpg/v1/fill/w_1800,h_800,al_c,q_90/ai-generated-IMAGE.jpg") center/cover no-repeat}.why .copy{max-width:680px}.why h2,.why p{color:white}
-.journey{text-align:center}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:45px}.card img{width:100%;aspect-ratio:4/5;object-fit:cover}.card p{font-family:"Libre Baskerville",Georgia,serif;font-size:.98rem;padding:0 .5rem}
-footer{border-top:1px solid var(--green);padding:55px 0;text-align:center}.social{display:inline-block;margin:1rem 0;color:var(--green);font-weight:600;text-decoration:none;border-bottom:1px solid var(--green)}.copyright{font-size:.9rem;opacity:.7}
-@media(max-width:760px){.navlinks{display:none}.split{grid-template-columns:1fr;gap:35px}section{padding:65px 0}.photo{height:420px}.care .text{padding:45px 5%}.cards{grid-template-columns:1fr}.why{min-height:650px}.hero{min-height:70vh}}
+
+nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:"Libre Baskerville",Georgia,serif;font-size:1.25rem;color:var(--green);text-decoration:none}
+.navlinks{display:flex;gap:1.5rem}
+.navlinks a{color:var(--green);text-decoration:none;font-size:.92rem}
+
+.hero{
+min-height:78vh;
+display:grid;
+place-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(20,30,25,.25),rgba(20,30,25,.35)),
+url("Golden%20Sunset%20Over%20Pastoral%20Fields.png") center/cover no-repeat;
+color:white;
+}
+
+.hero h1,.hero p{color:white;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero p{font-size:clamp(1.2rem,2.2vw,1.7rem)}
+
+section{padding:100px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.photo{width:100%;height:560px;object-fit:cover;display:block}
+.photo.wide{height:430px}
+
+.raise{background:#ece7dc}
+.care{padding:0}
+.care .text{padding:65px}
+
+.quote{
+font-family:"Libre Baskerville",Georgia,serif;
+font-style:italic;
+color:var(--green);
+margin-top:1.6rem
+}
+
+.why{
+min-height:600px;
+display:grid;
+align-items:center;
+background:
+linear-gradient(90deg,rgba(18,30,24,.68),rgba(18,30,24,.25)),
+url("Fiery%20Sunset%20Over%20Rustic%20Pasture.png") center/cover no-repeat;
+}
+
+.why .copy{max-width:680px}
+.why h2,.why p{color:white}
+
+.journey{text-align:center}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:45px}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.card p{font-family:"Libre Baskerville",Georgia,serif;font-size:.98rem;padding:0 .5rem}
+
+footer{border-top:1px solid var(--green);padding:55px 0;text-align:center}
+
+.social{
+display:inline-block;
+margin:1rem 0;
+color:var(--green);
+font-weight:600;
+text-decoration:none;
+border-bottom:1px solid var(--green)
+}
+
+.copyright{font-size:.9rem;opacity:.7}
+
+@media(max-width:760px){
+.navlinks{display:none}
+.split{grid-template-columns:1fr;gap:35px}
+section{padding:65px 0}
+.photo{height:420px}
+.care .text{padding:45px 5%}
+.cards{grid-template-columns:1fr}
+.why{min-height:650px}
+.hero{min-height:70vh}
+}
 </style>
 </head>
+
 <body>
-<header><nav class="wrap"><a class="brand" href="#">L & L Family Farm</a><div class="navlinks"><a href="#farm">Our Farm</a><a href="#cattle">Our Cattle</a><a href="#why">Why We Farm</a><a href="#follow">Follow</a></div></nav></header>
+
+<header>
+<nav class="wrap">
+<a class="brand" href="#">L & L Family Farm</a>
+<div class="navlinks">
+<a href="#farm">Our Farm</a>
+<a href="#cattle">Our Cattle</a>
+<a href="#why">Why We Farm</a>
+<a href="#follow">Follow</a>
+</div>
+</nav>
+</header>
 
 <main>
-<section class="hero"><div class="wrap"><div class="eyebrow">Wingate, North Carolina</div><h1>L & L Family Farm</h1><p>Raised with Care. Rooted in Family.</p></div></section>
 
-<section id="farm"><div class="wrap split"><div><div class="eyebrow">Our Story</div><h2>Our Farm</h2><p>L & L Family Farm started pretty simply — Mark decided he wanted cows. But what started with a love for cattle quickly became something bigger: a desire to build a farm our children could grow up on, learn from, and hopefully have to call their own one day.</p><p>We’re a family farm in Wingate, North Carolina, raising commercial Angus and South Poll cattle. We’re not trying to be the biggest farm. We simply want to raise our cattle well, take care of the land we’ve been blessed with, and build something our children can be proud of for generations.</p></div><img class="photo" src="https://static.wixstatic.com/media/866d77_05084feead794aabadeb147cf2458dfa~mv2.png/v1/fill/w_980,h_1307,al_c,q_90/ai-generated-IMAGE.png" alt="L & L Family Farm"></div></section>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Wingate, North Carolina</div>
+<h1>L & L Family Farm</h1>
+<p>Raised with Care. Rooted in Family.</p>
+</div>
+</section>
 
-<section id="cattle" class="raise"><div class="wrap split"><div><h2>How We Raise Our Cattle</h2><h3>Good for the Cows.<br>Good for the Land.</h3></div><div><p>We use rotational grazing to regularly move our cattle to fresh pasture. This gives sections of our pasture time to rest and recover while the cattle move on to fresh forage.</p><p>Over time, rotational grazing can help improve soil health, encourage stronger root systems, make better use of available forage, and naturally distribute nutrients across the pasture.</p><p>Most importantly, it gives our cattle access to fresh grass while allowing them to do what cattle were made to do — graze.</p><p>We believe healthier soil creates healthier pastures — and healthier pastures help us raise healthy, happy cattle.</p></div></div></section>
+<section id="farm">
+<div class="wrap split">
 
-<section class="care"><div class="split" style="gap:0"><img class="photo" src="https://static.wixstatic.com/media/866d77_ef94312854be48618dc007da8f8fc005~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_90/ai-generated-IMAGE.jpg" alt="Calf at L & L Family Farm"><div class="text"><h2>Raised With Care</h2><p>How our cattle are treated matters to us. They’re not just numbers in a pasture. We see them every day, we know them, and we do our best to give them a great life. We move them to fresh grass, make sure they have what they need, and treat them with the respect they deserve.</p><p>We don’t use growth hormones or pesticides, and we don’t routinely use antibiotics.</p><p class="quote">Our philosophy is simple: Take care of the land. Take care of the cattle. Leave both better than we found them.</p></div></div></section>
+<div>
+<div class="eyebrow">Our Story</div>
+<h2>Our Farm</h2>
 
-<section id="why" class="why"><div class="wrap"><div class="copy"><h2>Why We Farm</h2><p>This was never just about owning cows. It’s about building something for our children.</p><p>We want them to grow up knowing the responsibility of caring for animals, the value of hard work, and the importance of taking care of the land we’ve been blessed with.</p><p>We’re still growing. We’re still learning. And we’re building something we hope will last for generations.</p></div></div></section>
+<p>L & L Family Farm started pretty simply — Mark decided he wanted cows. But what started with a love for cattle quickly became something bigger: a desire to build a farm our children could grow up on, learn from, and hopefully have to call their own one day.</p>
 
-<section id="follow" class="journey"><div class="wrap"><div class="eyebrow">Life on the Farm</div><h2>Join Our Journey</h2><div class="cards">
-<div class="card"><img src="https://static.wixstatic.com/media/866d77_457214d68bec492784a871d63d13c93a~mv2.png/v1/fill/w_980,h_1307,al_c,q_90/ai-generated-IMAGE.png" alt="Sunset on the farm"><p>So thankful for God's beautiful creation.</p></div>
-<div class="card"><img src="https://static.wixstatic.com/media/866d77_c4e916891c4f4995b2a33121dccecb73~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_90/ai-generated-IMAGE.jpg" alt="Cattle on pasture"><p>Raised with care, respect, and plenty of fresh pasture.</p></div>
-<div class="card"><img src="https://static.wixstatic.com/media/866d77_376dcdbaf00f4eaba999f7c6a3c183a7~mv2.png/v1/fill/w_980,h_1307,al_c,q_90/ai-generated-IMAGE.png" alt="Pasture at L & L Family Farm"><p>Our land is our home, and we’re committed to its long-term health.</p></div>
-</div></div></section>
+<p>We’re a family farm in Wingate, North Carolina, raising commercial Angus and South Poll cattle. We’re not trying to be the biggest farm. We simply want to raise our cattle well, take care of the land we’ve been blessed with, and build something our children can be proud of for generations.</p>
+</div>
+
+<img class="photo" src="IMG_2995.jpg" alt="L & L Family Farm">
+
+</div>
+</section>
+
+<section id="cattle" class="raise">
+<div class="wrap split">
+
+<div>
+<h2>How We Raise Our Cattle</h2>
+<h3>Good for the Cows.<br>Good for the Land.</h3>
+</div>
+
+<div>
+<p>We use rotational grazing to regularly move our cattle to fresh pasture. This gives sections of our pasture time to rest and recover while the cattle move on to fresh forage.</p>
+
+<p>Over time, rotational grazing can help improve soil health, encourage stronger root systems, make better use of available forage, and naturally distribute nutrients across the pasture.</p>
+
+<p>Most importantly, it gives our cattle access to fresh grass while allowing them to do what cattle were made to do — graze.</p>
+
+<p>We believe healthier soil creates healthier pastures — and healthier pastures help us raise healthy, happy cattle.</p>
+</div>
+
+</div>
+</section>
+
+<section class="care">
+<div class="split" style="gap:0">
+
+<img class="photo" src="IMG_4103.jpg" alt="Cattle at L & L Family Farm">
+
+<div class="text">
+<h2>Raised With Care</h2>
+
+<p>How our cattle are treated matters to us. They’re not just numbers in a pasture. We see them every day, we know them, and we do our best to give them a great life. We move them to fresh grass, make sure they have what they need, and treat them with the respect they deserve.</p>
+
+<p>We don’t use growth hormones or pesticides, and we don’t routinely use antibiotics.</p>
+
+<p class="quote">Our philosophy is simple: Take care of the land. Take care of the cattle. Leave both better than we found them.</p>
+</div>
+
+</div>
+</section>
+
+<section id="why" class="why">
+<div class="wrap">
+<div class="copy">
+
+<h2>Why We Farm</h2>
+
+<p>This was never just about owning cows. It’s about building something for our children.</p>
+
+<p>We want them to grow up knowing the responsibility of caring for animals, the value of hard work, and the importance of taking care of the land we’ve been blessed with.</p>
+
+<p>We’re still growing. We’re still learning. And we’re building something we hope will last for generations.</p>
+
+</div>
+</div>
+</section>
+
+<section id="follow" class="journey">
+<div class="wrap">
+
+<div class="eyebrow">Life on the Farm</div>
+<h2>Join Our Journey</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="Dewy%20Meadow%20at%20Sunrise.png" alt="Pasture at L & L Family Farm">
+<p>So thankful for God's beautiful creation.</p>
+</div>
+
+<div class="card">
+<img src="IMG_3761.JPG" alt="Cattle on pasture">
+<p>Raised with care, respect, and plenty of fresh pasture.</p>
+</div>
+
+<div class="card">
+<img src="IMG_3868.jpg" alt="Pasture at L & L Family Farm">
+<p>Our land is our home, and we’re committed to its long-term health.</p>
+</div>
+
+</div>
+</div>
+</section>
+
 </main>
 
-<footer><div class="wrap"><h3>L & L Family Farm</h3><p>Wingate, NC</p><a class="social" href="https://www.instagram.com/landlfamilyfarm" target="_blank" rel="noopener">Follow Our Farm on Instagram →</a><p class="copyright">© 2026 L & L Family Farm. All rights reserved.</p></div></footer>
+<footer>
+<div class="wrap">
+<h3>L & L Family Farm</h3>
+<p>Wingate, NC</p>
+
+<a class="social"
+href="https://www.instagram.com/landlfamilyfarm"
+target="_blank"
+rel="noopener">
+Follow Our Farm on Instagram →
+</a>
+
+<p class="copyright">© 2026 L & L Family Farm. All rights reserved.</p>
+</div>
+</footer>
+
 </body>
 </html>
